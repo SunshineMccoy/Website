@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<!-- meta tag that bootstrap said is required -->
+	<meta charset="utf-8">
+
+	<title>Michael's Homepage</title>
+</head>
+<style>
+
+	body {
+		font-family: "Courier New", Courier;
+		background-color: gray;
+		font-size: 62.5%;
+		/* background-image: url('http://backgrounds.picaboo.com/download/da/a1/da1aac9d3bef40abab414609f3122187/legal_pad.jpg');
+		background-size: 100% 100%;
+		height: 100vh; */
+
+	}
+	/* I wanted to have the links look just like normal text */
+	a, a:link, a:visited, a:hover, a:active {
+	color: black;
+	text-decoration: none;
+	}
+	h1 {
+		text-align: center;
+		font-size: 1.2rem;
+		font-weight: normal;
+	}
+	h3 {
+		text-align: center;
+		font-size: 1rem;
+		font-weight: normal;
+	}
+	p {
+		text-align: center;
+		font-size: .8rem;
+	}
+	#main {
+		position: relative;
+		z-index: -1;
+	}
+	#topBar {
+		background-color: white;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+		width: 100%;
+	}
+	.header {
+		display: none;
+		width: 16.5%;
+	}
+	.title {
+		width: 34%
+	}
+	.hide {
+		display: none;
+	}
+
+	.flex-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.btn {
+		justify-content: flex-end;
+		position: relative;
+		align-self: auto;
+	}
+	.dropdown-menu {
+		overflow: hidden;
+		transition: all .5s linear;
+		max-height: 20px;
+	}
+	.dropdown-menu.expand {
+		max-height: 300px;
+	}
+
+
+	@media only screen and (min-width: 780px) {
+		#menu {
+			display: none;
+		}
+		.header {
+			display: block;
+		}
+		.title {
+			display: block;
+		}
+
+		.flex-container {
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.dropdown-menu {
+			display: none;
+		}
+
+		h1 {
+			text-align: center;
+			font-size: 2rem;
+		}
+		h3 {
+			text-align: center;
+			font-size: 1.6rem;
+		}
+		p {
+			text-align: center;
+			font-size: 1rem;
+		}
+	}
+
+
+</style>
+
+<body>
+	<!-- Nav Bar -->
+	<div id="wrapper">
+	<div id='topBar'>
+
+		<nav class="flex-container">
+			<div class="link-top header">
+				<a href="#"><h3> Home </h3></a>
+			</div>
+			<div class="link-top header">
+				<a href="michaelmccoy.me/blog"><h3> Blog </h3></a>
+			</div>
+			<div class="link-top title">
+				<h1> Michael McCoy's Site </h1>
+			</div>
+			<div class="link-top header">
+				<a href="#"><h3> Portfolio </h3></a>
+			</div>
+			<div class='link-top header'>
+				<a href="#"><h3> Resume </h3></a>
+			</div>
+			<div class="link-top" id='menu'>
+				<div class='dropdown'>
+					<button class='btn' type='button' id='dropdownMenuButton' onclick="displayMenu()">
+						Menu
+					</button>
+				</div>
+				</div>
+			<div class='dropdown-menu' id='dropdownMenu'>
+						<a class='dropdown-item' href='#'><h3>Home</h3></a><br>
+						<a class='dropdown-item' href='michaelmccoy.me/blog'><h3>Blog</h3></a><br>
+						<a class='dropdown-item' href='#'><h3>Portfolio</h3></a><br>
+						<a class='dropdown-item' href='#'><h3>Resume</h3></a>
+			</div>
+
+
+
+
+		</nav>
+	</div>
+	<div id="main">
+	<br>
+	<p> This site is a work in progress. Please check back soon for updates! </p>
+		<br>
+		<br>
+		<div class="jumbotron text-center">
+			<h1> Hello World!</h1>
+			<p> My name is Michael McCoy and I am an aspiring web developer living in Norfolk, Virginia.
+				I have been learning how to code in Javascript using the freecodecamp.org curriculum. This website is going to serve as a coding portfolio and blog to
+				document my coding journey! </p>
+		</div>
+		<br>
+		<br>
+		<div class="jumbotron text-center">
+			<h1> About Me </h1>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+				dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum
+				dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+				ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+				pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+		</div>
+		<br>
+		<br>
+		<div class="jumbotron text-center">
+			<h1> Latest Blog Post </h1>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+				dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum
+				dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+				ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+				pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+		</div>
+	</div>
+</div>
+
+
+
+	<script>
+		function displayMenu() {
+			document.querySelector(".dropdown-menu").classList.toggle("expand");
+		}
+	</script>
+
+	</div>
+	</body>
+	</html>
